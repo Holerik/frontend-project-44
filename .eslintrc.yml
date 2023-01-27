@@ -1,5 +1,10 @@
 extends:
-- 'airbnb-base'
+  - 'airbnb-base'
 env:
-node: true
-browser: true
+  node: true
+  browser: true
+rules:
+  no-console: off
+  import/extensions:
+    - 'warn'
+    - 'ignore Packages'
