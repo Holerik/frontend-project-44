@@ -1,17 +1,20 @@
 // brain-even.js
 import readlineSync from 'readline-sync';
 
+const ANSWER_YES = 'yes';
+const ANSWER_NO = 'no';
+
 const testAnswer = (num) => {
   const answer = readlineSync.prompt({ prompt: `Question: ${num}: ` });
-  const rightAnswer = num % 2 === 0 ? 'yes' : 'no';
+  const rightAnswer = num % 2 === 0 ? ANSWER_YES : ANSWER_NO;
   return {
-    result: answer === 'yes' || answer === 'no' ? rightAnswer === answer : false,
+    result: answer === ANSWER_YES || answer === ANSWER_NO ? rightAnswer === answer : false,
     answer,
     rightAnswer,
   };
 }
 
-function brainEven() {
+export function brainEven() {
   console.log('brain-even\n\n');
   console.log('Welcome to the Brain Games!');
   const user = readlineSync.question('May I have your name? ');
@@ -25,7 +28,7 @@ function brainEven() {
       console.log('Correct!');
     } else {
       let str = `'${test.answer}' is wrong answer ;(.`;
-      if (test.answer === 'yes' || test.answer === 'no') {
+      if (test.answer === ANSWER_YES || test.answer === ANSWER_NO) {
         str += ` Correct answer was '${test.rightAnswer}'`;
       }
       console.log(str);
