@@ -13,3 +13,7 @@ https://cloud.mail.ru/public/cc25/BxsxktRVZ
 https://cloud.mail.ru/public/j3bc/4QeerMr9P
 ### Успешно brain-calc
 https://cloud.mail.ru/public/Au8y/vdZYq1aZ7
+### Неудача brain-gcd
+https://cloud.mail.ru/public/RvgG/UoGC7DQec
+### Успешно brain-gcd
+https://cloud.mail.ru/public/VxDo/pmTrE4srJ
