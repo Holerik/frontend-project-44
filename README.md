@@ -17,3 +17,7 @@ https://cloud.mail.ru/public/Au8y/vdZYq1aZ7
 https://cloud.mail.ru/public/RvgG/UoGC7DQec
 ### Успешно brain-gcd
 https://cloud.mail.ru/public/VxDo/pmTrE4srJ
+### Неудача brain-progression
+https://cloud.mail.ru/public/QiHp/uQ1zWDzj6
+### Успешно brain-progression
+https://cloud.mail.ru/public/YNP4/2BqtbGcKN
