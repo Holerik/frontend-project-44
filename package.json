@@ -1,6 +1,6 @@
 {
   "name": "holerik-js-code",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "[![Actions Status](https://github.com/Holerik/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Holerik/frontend-project-44/actions)",
   "main": "index.js",
   "scripts": {
@@ -22,8 +22,9 @@
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
     "brain-calc": "bin/brain-calc.js",
-    "brain-gcd": "bin/brain-gcd",
-    "brain-progression": "brain-progression"
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-progression": "brain-progression.js",
+    "brain-prime": "brain-prime.js"
   },
   "dependencies": {
     "eslint": "^8.32.0",

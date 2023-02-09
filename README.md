@@ -21,3 +21,7 @@ https://cloud.mail.ru/public/VxDo/pmTrE4srJ
 https://cloud.mail.ru/public/QiHp/uQ1zWDzj6
 ### Успешно brain-progression
 https://cloud.mail.ru/public/YNP4/2BqtbGcKN
+### Неудача brain-prime
+https://cloud.mail.ru/public/auT6/jo6J7DNQ2
+### Успешно brain-prime
+https://cloud.mail.ru/public/o2Ed/jEnbKRccw
