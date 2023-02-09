@@ -18,16 +18,16 @@ const getSimpleDivider = (value) => {
 }
 
 const getSimpleDividers = (value) => {
-  const deviders = [];
+  const dividers = [];
   let div = 1;
   let val = value;
   while (div <= val) {
-    deviders.push(div);
+    dividers.push(div);
     div = getSimpleDivider(val);
     val = val / div;
   }
-  deviders.push(div);
-  return deviders;
+  dividers.push(div);
+  return dividers;
 }
 
 const generateQuestion = () => {
