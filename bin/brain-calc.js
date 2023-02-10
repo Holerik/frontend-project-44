@@ -6,7 +6,6 @@ import { randomIntFromInterval } from '../src/index.js';
 const OP_ADD = '+';
 const OP_MULT = '*';
 const OP_SUBTR = '-';
-const OP_DIV = '/';
 
 const generateQuestion = () => {
   const operations = [OP_ADD, OP_MULT, OP_SUBTR];
