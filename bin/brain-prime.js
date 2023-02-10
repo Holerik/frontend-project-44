@@ -1,14 +1,11 @@
 #!/usr/bin/env node
 // brain-prime.js
-import playGame from '../src/index.js';
-import { randomIntFromInterval } from '../src/index.js';
+import playGame, { randomIntFromInterval } from '../src/index.js';
 
 const ANSWER_YES = 'yes';
 const ANSWER_NO = 'no';
 
-const answerIsValid = (answer) => {
-  return answer === ANSWER_YES || answer === ANSWER_NO;
-}
+const answerIsValid = (answer) => answer === ANSWER_YES || answer === ANSWER_NO;
 
 const getSimpleDivider = (value) => {
   let div = 1;
@@ -16,7 +13,7 @@ const getSimpleDivider = (value) => {
     div += 1;
   } while (div <= value && value % div !== 0);
   return div;
-}
+};
 
 const getSimpleDividers = (value) => {
   const dividers = [];
@@ -29,7 +26,7 @@ const getSimpleDividers = (value) => {
   }
   dividers.push(div);
   return dividers;
-}
+};
 
 const generateQuestion = () => {
   const value = randomIntFromInterval(2, 300);
@@ -38,7 +35,7 @@ const generateQuestion = () => {
     expression: `${value}`,
     rightAnswer
   };
-}
+};
 
 const gameName = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 

@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 // brain-calc.js
-import playGame from '../src/index.js';
-import { randomIntFromInterval } from '../src/index.js';
+import playGame, { randomIntFromInterval } from '../src/index.js';
 
 const OP_ADD = '+';
 const OP_MULT = '*';
@@ -26,18 +25,18 @@ const generateQuestion = () => {
     case OP_SUBTR:
       rightAnswer = `${value1 - value2}`;
       break;
+    default:
+      rightAnswer = 'error!';
   }
   return {
     expression: `${value1} ${operations[opIndex]} ${value2}`,
-    rightAnswer
+    rightAnswer,
   };
-}
+};
 
 const gameName = 'What is the result of the expression?';
 
-const answerIsValid = (answer) => {
-  return !isNaN(+answer);
-}
+const answerIsValid = (answer) => !isNaN(+answer);
 
 function brainCalc()
 {

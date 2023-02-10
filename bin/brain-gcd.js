@@ -1,13 +1,10 @@
 #!/usr/bin/env node
 // brain-gcd.js
-import playGame from '../src/index.js';
-import { randomIntFromInterval } from '../src/index.js';
+import playGame, { randomIntFromInterval } from '../src/index.js';
 
 const gameName = 'Find the greatest common divisor of given numbers.';
 
-const answerIsValid = (answer) => {
-  return !isNaN(+answer);
-}
+const answerIsValid = (answer) => !isNaN(+answer);
 
 const generateQuestion = () => {
   const value1 = randomIntFromInterval(1, 75);
@@ -25,7 +22,7 @@ const generateQuestion = () => {
     expression: `${value1} ${value2}`,
     rightAnswer
   };
-}
+};
 
 function brainGcd()
 {

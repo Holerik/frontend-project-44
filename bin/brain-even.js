@@ -1,14 +1,11 @@
 #!/usr/bin/env node
 // brain-even.js
-import playGame from '../src/index.js';
-import { randomIntFromInterval } from '../src/index.js';
+import playGame, { randomIntFromInterval } from '../src/index.js';
 
 const ANSWER_YES = 'yes';
 const ANSWER_NO = 'no';
 
-const answerIsValid = (answer) => {
-  return answer === ANSWER_YES || answer === ANSWER_NO;
-}
+const answerIsValid = (answer) => answer === ANSWER_YES || answer === ANSWER_NO;
 
 const generateQuestion = () => {
   const value = randomIntFromInterval(1, 999);
@@ -17,7 +14,7 @@ const generateQuestion = () => {
     expression: `${value}`,
     rightAnswer
   };
-}
+};
 
 const gameName = 'Answer "yes" if the number is even, otherwise answer "no".';
 

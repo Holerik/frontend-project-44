@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 // brain-progression.js
-import playGame from '../src/index.js';
-import { randomIntFromInterval } from '../src/index.js';
+import playGame, { randomIntFromInterval } from '../src/index.js';
 
 const generateQuestion = () => {
   const firstNumber = randomIntFromInterval(1, 15);
@@ -23,13 +22,11 @@ const generateQuestion = () => {
     expression,
     rightAnswer: `${firstNumber + hiddenIndex * progressionStep}`
   };
-}
+};
 
 const gameName = 'What number is missing in the progression?';
 
-const answerIsValid = (answer) => {
-  return !isNaN(+answer);
-}
+const answerIsValid = (answer) => !isNaN(+answer);
 
 function brainProgression()
 {
