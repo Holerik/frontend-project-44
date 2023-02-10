@@ -22,7 +22,7 @@ const getSimpleDividers = (value) => {
   while (div <= val) {
     dividers.push(div);
     div = getSimpleDivider(val);
-    val = val / div;
+    val /= div;
   }
   dividers.push(div);
   return dividers;
@@ -33,7 +33,7 @@ const generateQuestion = () => {
   const rightAnswer = getSimpleDividers(value).length > 2 ? ANSWER_NO : ANSWER_YES;
   return {
     expression: `${value}`,
-    rightAnswer
+    rightAnswer,
   };
 };
 
@@ -41,7 +41,7 @@ const gameName = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 
 function brainPrime() {
   playGame(gameName, generateQuestion, answerIsValid);
-};
+}
 
 brainPrime();
 

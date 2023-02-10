@@ -13,14 +13,14 @@ const generateQuestion = () => {
       expression += ' ';
     }
     if (index !== hiddenIndex) {
-        expression += `${firstNumber + index * progressionStep}`;
-      } else {
-        expression += '..';
-      }
+      expression += `${firstNumber + index * progressionStep}`;
+    } else {
+      expression += '..';
+    }
   }
   return {
     expression,
-    rightAnswer: `${firstNumber + hiddenIndex * progressionStep}`
+    rightAnswer: `${firstNumber + hiddenIndex * progressionStep}`,
   };
 };
 
@@ -28,10 +28,9 @@ const gameName = 'What number is missing in the progression?';
 
 const answerIsValid = (answer) => !isNaN(+answer);
 
-function brainProgression()
-{
+function brainProgression() {
   playGame(gameName, generateQuestion, answerIsValid);
-};
+}
 
 brainProgression();
 

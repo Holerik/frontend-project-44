@@ -12,7 +12,7 @@ const generateQuestion = () => {
   const rightAnswer = value % 2 === 0 ? ANSWER_YES : ANSWER_NO;
   return {
     expression: `${value}`,
-    rightAnswer
+    rightAnswer,
   };
 };
 
@@ -20,7 +20,7 @@ const gameName = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 function brainEven() {
   playGame(gameName, generateQuestion, answerIsValid);
-};
+}
 
 brainEven();
 

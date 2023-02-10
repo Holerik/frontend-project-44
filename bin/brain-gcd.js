@@ -4,7 +4,7 @@ import playGame, { randomIntFromInterval } from '../src/index.js';
 
 const gameName = 'Find the greatest common divisor of given numbers.';
 
-const answerIsValid = (answer) => !isNaN(+answer);
+const answerIsValid = (answer) => !Number.isNaN(+answer);
 
 const generateQuestion = () => {
   const value1 = randomIntFromInterval(1, 75);
@@ -20,14 +20,13 @@ const generateQuestion = () => {
   const rightAnswer = `${min}`;
   return {
     expression: `${value1} ${value2}`,
-    rightAnswer
+    rightAnswer,
   };
 };
 
-function brainGcd()
-{
+function brainGcd() {
   playGame(gameName, generateQuestion, answerIsValid);
-};
+}
 
 brainGcd();
 
