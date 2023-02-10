@@ -36,12 +36,11 @@ const generateQuestion = () => {
 
 const gameName = 'What is the result of the expression?';
 
-const answerIsValid = (answer) => !isNaN(+answer);
+const answerIsValid = (answer) => !Number.isNaN(+answer);
 
-function brainCalc()
-{
+function brainCalc() {
   playGame(gameName, generateQuestion, answerIsValid);
-};
+}
 
 brainCalc();
 

@@ -6,6 +6,6 @@ const greetUser = () => {
   const user = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${user}!`);
   return user;
-}
+};
 
 export default greetUser;

@@ -26,7 +26,7 @@ const generateQuestion = () => {
 
 const gameName = 'What number is missing in the progression?';
 
-const answerIsValid = (answer) => !isNaN(+answer);
+const answerIsValid = (answer) => !Number.isNaN(+answer);
 
 function brainProgression() {
   playGame(gameName, generateQuestion, answerIsValid);
