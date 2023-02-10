@@ -25,7 +25,7 @@ const checkAnswer = (answer, rightAnswer, isValid) => {
       msg: 'Correct!',
       res: true,
     };
-  } 
+  }
   let str = `'${answer}' is wrong answer ;(.`;
   if (isValid(answer)) {
     str += ` Correct answer was '${rightAnswer}'.`;
