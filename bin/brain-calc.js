@@ -9,8 +9,8 @@ const OP_SUBTR = '-';
 const OP_DIV = '/';
 
 const generateQuestion = () => {
-  const operations = [OP_ADD, OP_MULT, OP_SUBTR, OP_DIV];
-  const opIndex = randomIntFromInterval(1, 4) - 1;
+  const operations = [OP_ADD, OP_MULT, OP_SUBTR];
+  const opIndex = randomIntFromInterval(1, 3) - 1;
   let value1 = randomIntFromInterval(1, 75);
   const value2 = randomIntFromInterval(1, 9);
   if (opIndex === 3) {
@@ -26,9 +26,6 @@ const generateQuestion = () => {
       break;
     case OP_SUBTR:
       rightAnswer = `${value1 - value2}`;
-      break;
-    case OP_DIV:
-      rightAnswer = `${value1 / value2}`;
       break;
   }
   return {
