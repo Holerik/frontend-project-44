@@ -11,9 +11,12 @@ const generateQuestion = () => {
   let expression = '';
   for (let index = 0; index < progressionLength; index += 1) {
     if (index !== hiddenIndex) {
-      expression += ` ${firstNumber + index * progressionStep}`;
+      if (index > 0) {
+        expression += ' ';
+      }
+      expression += `${firstNumber + index * progressionStep}`;
     } else {
-      expression += ' ..';
+      expression += '..';
     }
   }
   return {
