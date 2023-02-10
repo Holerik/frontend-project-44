@@ -1,6 +1,6 @@
 {
-  "name": "holerik-js-code",
-  "version": "0.3.0",
+  "name": "@hexlet/code",
+  "version": "0.0.0",
   "description": "[![Actions Status](https://github.com/Holerik/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Holerik/frontend-project-44/actions)",
   "main": "index.js",
   "scripts": {

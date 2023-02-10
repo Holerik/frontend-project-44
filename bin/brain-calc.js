@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // brain-calc.js
 import playGame from '../src/index.js';
 import { randomIntFromInterval } from '../src/index.js';
