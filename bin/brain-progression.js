@@ -10,14 +10,14 @@ const generateQuestion = () => {
   const hiddenIndex = randomIntFromInterval(1, progressionLength) - 1;
   let expression = '';
   for (let index = 0; index < progressionLength; index += 1) {
-    if (index !== hiddenIndex) {
-      if (index > 0) {
-        expression += ' ';
-      }
-      expression += `${firstNumber + index * progressionStep}`;
-    } else {
-      expression += '..';
+    if (index > 0) {
+      expression += ' ';
     }
+    if (index !== hiddenIndex) {
+        expression += `${firstNumber + index * progressionStep}`;
+      } else {
+        expression += '..';
+      }
   }
   return {
     expression,
