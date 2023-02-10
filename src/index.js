@@ -2,9 +2,7 @@
 import readlineSync from 'readline-sync';
 import greetUser from './cli.js';
 
-const randomIntFromInterval = (min, max) => {
-  return Math.floor(Math.random() * (max - min + 1) + min)
-}
+const randomIntFromInterval = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
 let user = '';
 
